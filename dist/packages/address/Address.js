@@ -28,7 +28,7 @@ import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../overlay/Overlay.js";
 import "../with-install-783bc31f.js";
 import "@tarojs/taro";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
 const cN = "NutAddress";
 const { create } = createComponent("address");

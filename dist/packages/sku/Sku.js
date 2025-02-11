@@ -7,7 +7,7 @@ import { InputNumber as _sfc_main$6 } from "../inputnumber/InputNumber.js";
 import { N as NutPopup } from "../index.taro-6458bbea.js";
 import { _ as _sfc_main$7 } from "../index.taro.vue_vue_type_script_setup_true_lang-1aa3f6fa.js";
 import "../with-install-783bc31f.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
 import "../pxCheck-a27490eb.js";
 import "@nutui/icons-vue-taro";

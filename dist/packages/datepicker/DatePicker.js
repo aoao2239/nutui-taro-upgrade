@@ -26,7 +26,7 @@ import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../pxCheck-a27490eb.js";
 import "../index-7a7385e4.js";
 import "../index-a91e4a00.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 const { create } = createComponent("date-picker");
 const currentYear = (/* @__PURE__ */ new Date()).getFullYear();
 function isDate (val) {

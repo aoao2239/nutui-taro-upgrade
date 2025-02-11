@@ -28,7 +28,7 @@ import "@nutui/icons-vue-taro";
 import "../overlay/Overlay.js";
 import "../with-install-783bc31f.js";
 import "@tarojs/taro";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 const { create } = createComponent("dialog");
 const cN = "NutDialog";
 const _sfc_main = create({

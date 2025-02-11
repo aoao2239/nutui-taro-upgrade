@@ -22,7 +22,7 @@ import Taro from "@tarojs/taro";
 import { u as useLocale } from "../index-a91e4a00.js";
 import { u as useFormDisabled } from "../common-47b33c3f.js";
 import { w as withInstall } from "../with-install-783bc31f.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
 import "../useParent-db66af63.js";
 const _hoisted_1 = ["rows", "disabled", "value", "maxlength", "placeholder", "auto-focus"];

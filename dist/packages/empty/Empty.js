@@ -21,7 +21,7 @@ import { defineComponent, computed, openBlock, createElementBlock, createElement
 import { p as pxCheck } from "../pxCheck-a27490eb.js";
 import { u as useLocale } from "../index-a91e4a00.js";
 import { w as withInstall } from "../with-install-783bc31f.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
 const _hoisted_1 = { class: "nut-empty" };
 const _hoisted_2 = ["src"];

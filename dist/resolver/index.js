@@ -2,7 +2,7 @@
 const nutFunctions = ["showToast", "showNotify", "showDialog", "showImagePreview"];
 function getNutResolved (name, options) {
   const { taro = false, autoImport = false } = options;
-  const packageName = taro ? "@nutui/nutui-taro-upgrade" : "@nutui/nutui";
+  const packageName = taro ? "nutui-taro-upgrade" : "@nutui/nutui";
   const componentName = autoImport ? name.slice(4) : name;
   const style = `${packageName}/dist/packages/${componentName.toLowerCase()}/style`;
   return {

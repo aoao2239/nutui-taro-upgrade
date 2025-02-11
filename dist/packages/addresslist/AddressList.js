@@ -6,7 +6,7 @@ import { Del, Edit } from "@nutui/icons-vue-taro";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import { Button as _sfc_main$3 } from "../button/Button.js";
 import { Swipe as _sfc_main$4 } from "../swipe/Swipe.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "@tarojs/taro";
 import "../with-install-783bc31f.js";
 import "../index-7a7385e4.js";

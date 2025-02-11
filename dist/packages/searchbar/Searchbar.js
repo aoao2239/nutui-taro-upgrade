@@ -24,7 +24,7 @@ import { CircleClose } from "@nutui/icons-vue-taro";
 import { u as useLocale } from "../index-a91e4a00.js";
 import { u as useFormDisabled } from "../common-47b33c3f.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
 import "../useParent-db66af63.js";
 const { create } = createComponent("searchbar");

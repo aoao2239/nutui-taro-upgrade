@@ -8,7 +8,7 @@ import "@nutui/icons-vue-taro";
 import "../common-47b33c3f.js";
 import "../useParent-db66af63.js";
 import "../with-install-783bc31f.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
 const { create } = createComponent("ecard");
 const cN = "NutEcard";

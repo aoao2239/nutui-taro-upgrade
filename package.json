@@ -1,7 +1,7 @@
 {
-  "name": "@nutui/nutui-taro-upgrade",
-  "version": "4.3.13",
-  "description": "京东风格的轻量级移动端 Vue2、Vue3 组件库（支持小程序开发）",
+  "name": "nutui-taro-upgrade",
+  "version": "1.0.0",
+  "description": "@nutui/nutui-taro 对京东风格组件库的taro4 版本支持",
   "main": "dist/nutui.umd.js",
   "module": "dist/nutui.es.js",
   "style": "dist/style.css",
@@ -23,10 +23,9 @@
     "vue component",
     "vue3 component",
     "vite",
-    "jdc",
-    "jdcfe"
+    "jdc"
   ],
-  "author": "jdcfe",
+  "author": "xiongjh",
   "license": "MIT",
   "publishConfig": {
     "access": "public",
@@ -59,7 +58,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/jdf2e/nutui.git"
+    "url": "https://github.com/aoao2239/nutui-taro-upgrade"
   },
   "homepage": "https://nutui.jd.com/"
 }

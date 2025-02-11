@@ -25,7 +25,7 @@ import { a as preventDefault, c as clamp } from "../util-f26975e1.js";
 import { u as useTouch } from "../index-7a7385e4.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import { u as useLocale } from "../index-a91e4a00.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 const DEFAULT_FILED_NAMES = {
   text: "text",
   value: "value",

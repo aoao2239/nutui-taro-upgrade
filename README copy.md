@@ -62,7 +62,7 @@
 
 - 🚀 80+ 高质量组件，覆盖移动端主流场景
 - 💪 支持一套代码同时开发 H5+多端小程序
-- 📖 基于京东APP 10.0 视觉规范
+- 📖 基于京东 APP 10.0 视觉规范
 - 🍭 支持按需引用
 - 📖 详尽的文档和示例
 - 💪 支持 TypeScript
@@ -78,7 +78,7 @@
 
 [@nutui/nutui](https://nutui.jd.com/h5/vue/4x/#/zh-CN/guide/intro)：适用于移动端 H5 页面开发
 
-[@nutui/nutui-taro-upgrade](https://nutui.jd.com/taro/vue/4x/#/zh-CN/guide/intro)：支持开发 Taro 多端小程序（微信、支付宝、京东等小程序）和 Taro-H5 项目
+[nutui-taro-upgrade](https://nutui.jd.com/taro/vue/4x/#/zh-CN/guide/intro)：支持开发 Taro 多端小程序（微信、支付宝、京东等小程序）和 Taro-H5 项目
 
 ## 链接
 
@@ -86,25 +86,25 @@
 
 由 NutUI 官方团队维护的项目如下：
 
-| 项目 | 描述 | 版本 |
-| --- | --- | --- |
-| [@nutui/nutui](https://github.com/jdf2e/nutui) | NutUI 移动端 H5 版本 | ![nutui](https://img.shields.io/npm/v/@nutui/nutui.svg?label=%20) |
-| [@nutui/nutui-taro-upgrade](https://github.com/jdf2e/nutui) | NutUI Taro 多端版本 | ![nutui](https://img.shields.io/npm/v/@nutui/nutui-taro-upgrade.svg?label=%20) |
-| [@nutui/icons-vue](https://github.com/jdf2e/nutui-icons) | `@nutui/nutui` 使用的图标库 | ![nutui](https://img.shields.io/npm/v/@nutui/icons-vue.svg?label=%20) |
-| [@nutui/icons-vue-taro](https://github.com/jdf2e/nutui-icons) | `@nutui/nutui-taro-upgrade` 使用的图标库 | ![nutui](https://img.shields.io/npm/v/@nutui/icons-vue-taro.svg?label=%20) |
-| [@nutui/touch-emulator](packages/nutui-touch-emulator) | 在桌面端使用 NutUI 的辅助库 | ![nutui](https://img.shields.io/npm/v/@nutui/touch-emulator.svg?label=%20) |
+| 项目                                                               | 描述                                        | 版本                                                                             |
+| ------------------------------------------------------------------ | ------------------------------------------- | -------------------------------------------------------------------------------- |
+| [@nutui/nutui](https://github.com/jdf2e/nutui)                     | NutUI 移动端 H5 版本                        | ![nutui](https://img.shields.io/npm/v/@nutui/nutui.svg?label=%20)                |
+| [nutui-taro-upgrade](https://github.com/jdf2e/nutui)               | NutUI Taro 多端版本                         | ![nutui](https://img.shields.io/npm/v/nutui-taro-upgrade.svg?label=%20)          |
+| [@nutui/icons-vue](https://github.com/jdf2e/nutui-icons)           | `@nutui/nutui` 使用的图标库                 | ![nutui](https://img.shields.io/npm/v/@nutui/icons-vue.svg?label=%20)            |
+| [@nutui/icons-vue-taro](https://github.com/jdf2e/nutui-icons)      | `nutui-taro-upgrade` 使用的图标库           | ![nutui](https://img.shields.io/npm/v/@nutui/icons-vue-taro.svg?label=%20)       |
+| [@nutui/touch-emulator](packages/nutui-touch-emulator)             | 在桌面端使用 NutUI 的辅助库                 | ![nutui](https://img.shields.io/npm/v/@nutui/touch-emulator.svg?label=%20)       |
 | [@nutui/auto-import-resolver](packages/nutui-auto-import-resolver) | `unplugin-auto-import` 插件的 resolver 配置 | ![nutui](https://img.shields.io/npm/v/@nutui/auto-import-resolver.svg?label=%20) |
-| [@nutui/playground](packages/nutui-playground) | NutUI 在线 Playground | - |
-| [nutui-demo](https://github.com/jdf2e/nutui-demo) | NutUI 官方示例合集 | - |
+| [@nutui/playground](packages/nutui-playground)                     | NutUI 在线 Playground                       | -                                                                                |
+| [nutui-demo](https://github.com/jdf2e/nutui-demo)                  | NutUI 官方示例合集                          | -                                                                                |
 
 ### 社区生态
 
 由社区维护的项目如下，欢迎补充：
 
-| 项目 | 描述 |
-| --- | --- |
-| [nutui-uniapp](https://github.com/nutui-uniapp/nutui-uniapp) | 基于 NutUI 4.x 版本开发的 uni-app 组件库 |
-| [jwaterwater/uni-nutui](https://github.com/jwaterwater/uni-nutui) | 基于 NutUI 3.x 版本开发的 uni-app 组件库 |
+| 项目                                                                     | 描述                                      |
+| ------------------------------------------------------------------------ | ----------------------------------------- |
+| [nutui-uniapp](https://github.com/nutui-uniapp/nutui-uniapp)             | 基于 NutUI 4.x 版本开发的 uni-app 组件库  |
+| [jwaterwater/uni-nutui](https://github.com/jwaterwater/uni-nutui)        | 基于 NutUI 3.x 版本开发的 uni-app 组件库  |
 | [common-intellisense](https://github.com/Simon-He95/common-intellisense) | 提供 NutUI 4.x 版本智能提示的 vscode 插件 |
 
 ## 项目状态
@@ -122,9 +122,9 @@ NutUI 已经投入了我们的生产环境中使用，业界也在广泛地使�
 
 ## 开发交流
 
-| 微信群 | 内部咚咚群 |
-| --- | --- |
-| <img src="https://storage.360buyimg.com/nutui-static/image/wx-code.png" width="100" /> 添加好友并回复「NutUI Vue」 | 82957939 |
+| 微信群                                                                                                             | 内部咚咚群 |
+| ------------------------------------------------------------------------------------------------------------------ | ---------- |
+| <img src="https://storage.360buyimg.com/nutui-static/image/wx-code.png" width="100" /> 添加好友并回复「NutUI Vue」 | 82957939   |
 
 ## 参与共建
 

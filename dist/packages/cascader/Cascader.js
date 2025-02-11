@@ -72,7 +72,7 @@ import "../raf-df951186.js";
 import "../index-7a7385e4.js";
 import "../index-d9b20e11.js";
 import "../types-e0623c97.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 const formatTree = (tree, parent, config) => tree.map((node) => {
   const { value: valueKey = "value", text: textKey = "text", children: childrenKey = "children" } = config;
   const _a = node, { [valueKey]: value, [textKey]: text, [childrenKey]: children } = _a, others = __objRest(_a, [__restKey(valueKey), __restKey(textKey), __restKey(childrenKey)]);

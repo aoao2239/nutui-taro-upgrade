@@ -6,7 +6,7 @@ import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "@nutui/icons-vue-taro";
 import "../overlay/Overlay.js";
 import "../with-install-783bc31f.js";
-import "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
 const { create } = createComponent("time-select");
 const cN = "NutTimeSelect";

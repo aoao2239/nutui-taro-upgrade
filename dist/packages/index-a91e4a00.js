@@ -1,4 +1,4 @@
-import locale from "@nutui/nutui-taro-upgrade/dist/packages/locale/lang";
+import locale from "nutui-taro-upgrade/dist/packages/locale/lang";
 import { g as getPropByPath, i as isFunction } from "./util-f26975e1.js";
 const useLocale = (name = "") => {
   return (keyPath, ...args) => {
