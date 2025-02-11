@@ -22,7 +22,7 @@ import Taro from "@tarojs/taro";
 import { computed, ref, reactive, onMounted, resolveComponent, openBlock, createElementBlock, normalizeClass, createElementVNode, createTextVNode, createVNode, withCtx, toDisplayString } from "vue";
 import { c as createComponent } from "../component-669c158a.js";
 import { Button as _sfc_main$1 } from "../button/Button.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "@nutui/icons-vue-taro";
 import "../with-install-783bc31f.js";
@@ -57,7 +57,7 @@ const _sfc_main = create({
     NutButton: _sfc_main$1
   },
   emits: ["start", "end", "signing", "confirm", "clear"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const classes = computed(() => {
       const prefixCls = "nut-signature";
@@ -139,12 +139,12 @@ const _sfc_main = create({
           canvas: res[0].node,
           canvasId: canvasSetId,
           fileType: props.type,
-          success: function (result) {
+          success: function(result) {
             const _canvas = !isDraw.value ? "请绘制签名" : state.canvas;
             const _filePath = !isDraw.value ? "" : result.tempFilePath;
             emit("confirm", _canvas, _filePath);
           },
-          fail: function (result) {
+          fail: function(result) {
             emit("confirm", result);
           }
         });
@@ -159,7 +159,7 @@ const _sfc_main = create({
                 node: true,
                 size: true
               },
-              function (res) {
+              function(res) {
                 const canvas = res.node;
                 canvasSetting(canvas, res.width, res.height);
               }
@@ -206,7 +206,7 @@ const _hoisted_1 = {
   class: /* @__PURE__ */ normalizeClass(["nut-signature-inner", "spcanvas_WEAPP"])
 };
 const _hoisted_2 = ["id", "canvasId"];
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_button = resolveComponent("nut-button");
   return openBlock(), createElementBlock("view", {
     class: normalizeClass(_ctx.classes)

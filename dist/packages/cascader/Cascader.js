@@ -61,7 +61,7 @@ import { _ as _sfc_main$2 } from "../index.taro.vue_vue_type_script_setup_true_l
 import { Loading, Checklist } from "@nutui/icons-vue-taro";
 import NutTabs from "../tabs/Tabs.js";
 import NutTabPane from "../tabpane/TabPane.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../overlay/Overlay.js";
 import "../with-install-783bc31f.js";
@@ -144,7 +144,7 @@ class Tree {
     }, config || {});
     this.nodes = formatTree(nodes, null, this.config);
   }
-  updateChildren (nodes, parent) {
+  updateChildren(nodes, parent) {
     if (!parent) {
       this.nodes = formatTree(nodes, null, this.config);
     } else {
@@ -152,7 +152,7 @@ class Tree {
     }
   }
   // for test
-  getNodeByValue (value) {
+  getNodeByValue(value) {
     let foundNode;
     eachTree(this.nodes, (node) => {
       if (node.value === value) {
@@ -162,7 +162,7 @@ class Tree {
     });
     return foundNode;
   }
-  getPathNodesByValue (value) {
+  getPathNodesByValue(value) {
     if (!value.length) {
       return [];
     }
@@ -178,12 +178,12 @@ class Tree {
     }
     return pathNodes;
   }
-  isLeaf (node, lazy) {
+  isLeaf(node, lazy) {
     const { leaf, children } = node;
     const hasChildren = Array.isArray(children) && Boolean(children.length);
     return leaf || !hasChildren && !lazy;
   }
-  hasChildren (node, lazy) {
+  hasChildren(node, lazy) {
     const isLeaf = this.isLeaf(node, lazy);
     if (isLeaf) {
       return false;
@@ -225,7 +225,7 @@ const _sfc_main$1 = create$1({
     convertConfig: Object
   },
   emits: ["update:modelValue", "change", "pathChange"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale();
     const configs = computed(() => ({
       lazy: props.lazy,
@@ -346,7 +346,7 @@ const _sfc_main$1 = create$1({
     };
     const methods = {
       // 选中一个节点，静默模式不触发事件
-      handleNode (node, silent) {
+      handleNode(node, silent) {
         return __async(this, null, function* () {
           const { disabled, loading } = node;
           if (!silent && disabled || !panes.value[tabsCursor.value]) {
@@ -389,14 +389,14 @@ const _sfc_main$1 = create$1({
           }
         });
       },
-      handleTabClick (tab) {
+      handleTabClick(tab) {
         currentProcessNode = null;
         tabsCursor.value = Number(tab.paneKey);
       },
-      formatTabTitle (pane) {
+      formatTabTitle(pane) {
         return pane.selectedNode ? pane.selectedNode.text : translate("select");
       },
-      isSelected (pane, node) {
+      isSelected(pane, node) {
         var _a2;
         return ((_a2 = pane == null ? void 0 : pane.selectedNode) == null ? void 0 : _a2.value) === node.value;
       }
@@ -437,7 +437,7 @@ const _hoisted_1$1 = {
 };
 const _hoisted_2 = ["aria-checked", "aria-disabled", "onClick"];
 const _hoisted_3 = { class: "nut-cascader-item__title" };
-function _sfc_render$1 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Loading = resolveComponent("Loading");
   const _component_Checklist = resolveComponent("Checklist");
   const _component_nut_scroll_view = resolveComponent("nut-scroll-view");
@@ -541,13 +541,13 @@ const _sfc_main = create({
     convertConfig: Object
   }),
   emits: ["update:modelValue", "change", "pathChange", "update:visible"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const innerValue = ref(props.modelValue);
     const innerVisible = computed({
-      get () {
+      get() {
         return props.visible;
       },
-      set (value) {
+      set(value) {
         emit("update:visible", value);
       }
     });
@@ -577,7 +577,7 @@ const _sfc_main = create({
   }
 });
 const _hoisted_1 = ["innerHTML"];
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_cascader_item = resolveComponent("nut-cascader-item");
   const _component_nut_popup = resolveComponent("nut-popup");
   return _ctx.poppable ? (openBlock(), createBlock(_component_nut_popup, {

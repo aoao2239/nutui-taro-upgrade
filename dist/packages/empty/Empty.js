@@ -19,7 +19,7 @@ var __spreadValues = (a, b) => {
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 import { defineComponent, computed, openBlock, createElementBlock, createElementVNode, normalizeStyle, renderSlot, createCommentVNode, createTextVNode, toDisplayString } from "vue";
 import { p as pxCheck } from "../pxCheck-a27490eb.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { w as withInstall } from "../with-install-783bc31f.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
@@ -36,7 +36,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent(__spreadProps(__spreadValues({
     imageSize: { default: "" },
     description: { default: "" }
   },
-  setup (__props) {
+  setup(__props) {
     const props = __props;
     const translate = useLocale(cN);
     const defaultStatus = {

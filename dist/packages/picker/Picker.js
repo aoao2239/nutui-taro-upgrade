@@ -24,7 +24,7 @@ import { p as pxCheck } from "../pxCheck-a27490eb.js";
 import { a as preventDefault, c as clamp } from "../util-f26975e1.js";
 import { u as useTouch } from "../index-7a7385e4.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
 const DEFAULT_FILED_NAMES = {
   text: "text",
@@ -231,7 +231,7 @@ const _sfc_main$1 = create$1({
     }
   },
   emits: ["click", "change"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const touch = useTouch();
     const state = reactive({
       touchParams: {
@@ -433,7 +433,7 @@ const _sfc_main$1 = create$1({
     });
   }
 });
-function _sfc_render$1 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("view", {
     class: "nut-picker__list",
     onTouchstart: _cache[1] || (_cache[1] = (...args) => _ctx.onTouchStart && _ctx.onTouchStart(...args)),
@@ -535,7 +535,7 @@ const _sfc_main = create({
   },
   props: baseProps,
   emits: ["cancel", "change", "confirm", "update:modelValue"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const {
       changeHandler,
@@ -627,7 +627,7 @@ const _hoisted_2 = {
 const _hoisted_3 = { class: "nut-picker__title" };
 const _hoisted_4 = ["indicator-style", "value"];
 const _hoisted_5 = ["filed-names"];
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_picker_column = resolveComponent("nut-picker-column");
   return openBlock(), createElementBlock("view", _hoisted_1, [
     _ctx.showToolbar ? (openBlock(), createElementBlock("view", _hoisted_2, [

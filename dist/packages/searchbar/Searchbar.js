@@ -21,7 +21,7 @@ import { toRef, reactive, computed, ref, onMounted, toRefs, openBlock, createEle
 import { c as createComponent } from "../component-669c158a.js";
 import { r as renderIcon } from "../renderIcon-3d0fd47c.js";
 import { CircleClose } from "@nutui/icons-vue-taro";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { u as useFormDisabled } from "../common-47b33c3f.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
@@ -111,7 +111,7 @@ const _sfc_main = create({
     "clickLeftIcon",
     "clickRightIcon"
   ],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const disabled = useFormDisabled(toRef(props, "disabled"));
     const translate = useLocale(cN);
     const state = reactive({
@@ -223,7 +223,7 @@ const _hoisted_5 = {
   key: 1,
   class: "nut-searchbar__search-icon nut-searchbar__right-search-icon"
 };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("view", {
     class: normalizeClass(["nut-searchbar", { "safe-area-inset-bottom": _ctx.safeAreaInsetBottom }]),
     style: normalizeStyle(_ctx.searchbarStyle)

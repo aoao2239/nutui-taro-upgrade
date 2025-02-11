@@ -25,11 +25,11 @@ import { nextTick } from "@tarojs/taro";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../pxCheck-a27490eb.js";
 import "../index-7a7385e4.js";
-import "../index-a91e4a00.js";
+import "../index-3b6ff56c.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
 const { create } = createComponent("date-picker");
 const currentYear = (/* @__PURE__ */ new Date()).getFullYear();
-function isDate (val) {
+function isDate(val) {
   return isDate$1(val) && !isNaN(val.getTime());
 }
 const zhCNType = {
@@ -109,7 +109,7 @@ const _sfc_main = create({
     }
   },
   emits: ["click", "cancel", "change", "confirm", "update:modelValue"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const state = reactive({
       currentDate: /* @__PURE__ */ new Date(),
       title: props.title,
@@ -123,7 +123,7 @@ const _sfc_main = create({
       timestmp = Math.min(timestmp, props.maxDate.getTime());
       return new Date(timestmp);
     };
-    function getMonthEndDay (year, month) {
+    function getMonthEndDay(year, month) {
       return 32 - new Date(year, month - 1, 32).getDate();
     }
     const getBoundary = (type, value) => {
@@ -364,7 +364,7 @@ const _sfc_main = create({
     });
   }
 });
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_picker = resolveComponent("nut-picker");
   return openBlock(), createBlock(_component_nut_picker, {
     modelValue: _ctx.selectedValue,

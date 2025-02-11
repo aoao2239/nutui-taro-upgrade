@@ -19,7 +19,7 @@ var __spreadValues = (a, b) => {
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 import { defineComponent, toRef, ref, computed, watch, nextTick, onMounted, openBlock, createElementBlock, normalizeClass, createElementVNode, mergeProps, unref, createTextVNode, toDisplayString, createCommentVNode, normalizeStyle } from "vue";
 import Taro from "@tarojs/taro";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { u as useFormDisabled } from "../common-47b33c3f.js";
 import { w as withInstall } from "../with-install-783bc31f.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
@@ -49,7 +49,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent(__spreadProps(__spreadValues({
     autofocus: { type: Boolean, default: false }
   },
   emits: ["update:modelValue", "change", "blur", "focus"],
-  setup (__props, { emit: __emit }) {
+  setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
     const disabled = useFormDisabled(toRef(props, "disabled"));

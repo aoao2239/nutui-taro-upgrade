@@ -1,6 +1,6 @@
 import { toRefs, computed, watchEffect, openBlock, createElementBlock, createElementVNode, normalizeClass, renderSlot, createTextVNode, toDisplayString, Fragment, renderList, createCommentVNode } from "vue";
 import { c as createComponent } from "../component-669c158a.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
@@ -47,7 +47,7 @@ const _sfc_main = create({
   },
   components: {},
   emits: ["change", "update:modelValue"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const { modelValue, mode, showPageSize, forceEllipses } = toRefs(props);
     const countRef = computed(() => {
@@ -124,7 +124,7 @@ const _hoisted_4 = {
   class: "nut-pagination-contain"
 };
 const _hoisted_5 = { class: "nut-pagination-simple" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("view", _hoisted_1, [
     createElementVNode("view", {
       class: normalizeClass(["nut-pagination-prev", _ctx.mode == "multi" ? "" : "simple-border", _ctx.modelValue == 1 ? "disabled" : ""]),

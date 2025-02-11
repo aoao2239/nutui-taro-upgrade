@@ -20,7 +20,7 @@ var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 import { defineComponent, h, reactive, watch, toRefs, resolveComponent, openBlock, createElementBlock, createElementVNode, normalizeClass, Fragment, renderList, normalizeStyle, createTextVNode, toDisplayString, renderSlot, createBlock, createCommentVNode } from "vue";
 import { c as createComponent } from "../component-669c158a.js";
 import { DownArrow } from "@nutui/icons-vue-taro";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
 import "../util-f26975e1.js";
@@ -35,7 +35,7 @@ const RenderColumn = defineComponent({
       default: () => ({})
     }
   },
-  setup (props) {
+  setup(props) {
     return () => h(`view`, {}, props.slots[0] ? props.slots[0](props.record) : props.slots[1](props.record));
   }
 });
@@ -69,7 +69,7 @@ const _sfc_main = create({
     }
   },
   emits: ["sorter"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const state = reactive({
       curData: props.data
@@ -141,7 +141,7 @@ const _hoisted_9 = {
   class: "nut-table__summary"
 };
 const _hoisted_10 = ["innerHTML"];
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_DownArrow = resolveComponent("DownArrow");
   const _component_RenderColumn = resolveComponent("RenderColumn");
   return openBlock(), createElementBlock("view", _hoisted_1, [

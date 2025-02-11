@@ -1,7 +1,7 @@
 import { resolveComponent, openBlock, createElementBlock, createElementVNode, renderSlot, toDisplayString, createTextVNode, createCommentVNode, createVNode, ref, h, createBlock, resolveDynamicComponent, withCtx, reactive, watch, onMounted, Fragment, renderList, createSlots } from "vue";
 import { c as createComponent } from "../component-669c158a.js";
 import { f as floatData } from "../util-f26975e1.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { Del, Edit } from "@nutui/icons-vue-taro";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import { Button as _sfc_main$3 } from "../button/Button.js";
@@ -23,7 +23,7 @@ const _sfc_main$2 = create$2({
     }
   },
   emits: ["delIcon", "editIcon", "clickItem"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN$1);
     const delClick = (event) => {
       emit("delIcon", event, props.item);
@@ -55,7 +55,7 @@ const _hoisted_5 = {
 };
 const _hoisted_6 = { class: "nut-address-list-item__info-handle" };
 const _hoisted_7 = { class: "nut-address-list-item__addr" };
-function _sfc_render$2 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Del = resolveComponent("Del");
   const _component_Edit = resolveComponent("Edit");
   return openBlock(), createElementBlock("div", {
@@ -120,17 +120,17 @@ const _sfc_main$1 = create$1({
     NutButton: _sfc_main$3,
     NutSwipe: _sfc_main$4
   },
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const renderCompontent = () => {
       return h(ItemContents, {
         item: props.item,
-        onDelIcon (event) {
+        onDelIcon(event) {
           delClick(event);
         },
-        onEditIcon (event) {
+        onEditIcon(event) {
           editClick(event);
         },
-        onClickItem (event) {
+        onClickItem(event) {
           clickItem(event);
         }
       });
@@ -225,7 +225,7 @@ const _hoisted_1$1 = {
   class: "nut-address-list-general"
 };
 const _hoisted_2 = { class: "nut-address-list-swipe" };
-function _sfc_render$1 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_button = resolveComponent("nut-button");
   const _component_nut_swipe = resolveComponent("nut-swipe");
   return !_ctx.swipeEdition ? (openBlock(), createElementBlock("div", _hoisted_1$1, [
@@ -344,7 +344,7 @@ const _sfc_main = create({
     NutButton: _sfc_main$3
   },
   emits: ["delIcon", "editIcon", "clickItem", "longCopy", "longSet", "longDel", "swipeDel", "add"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const dataArray = ref([]);
     const dataInfo = reactive({
@@ -416,7 +416,7 @@ const _sfc_main = create({
   }
 });
 const _hoisted_1 = { class: "nut-address-list" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_general_shell = resolveComponent("general-shell");
   const _component_nut_button = resolveComponent("nut-button");
   return openBlock(), createElementBlock("view", _hoisted_1, [

@@ -1,7 +1,7 @@
 import { resolveComponent, openBlock, createElementBlock, createElementVNode, createTextVNode, renderSlot, createBlock, createCommentVNode, toDisplayString, ref, watch, onMounted, Fragment, renderList, normalizeClass, createVNode, withCtx, createSlots } from "vue";
 import { Price as _sfc_main$5 } from "../price/Price.js";
 import { c as createComponent } from "../component-669c158a.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import { InputNumber as _sfc_main$6 } from "../inputnumber/InputNumber.js";
 import { N as NutPopup } from "../index.taro-6458bbea.js";
@@ -27,7 +27,7 @@ const _sfc_main$4 = create$4({
   components: {
     NutPrice: _sfc_main$5
   },
-  setup (props, { slots }) {
+  setup(props, { slots }) {
     const translate = useLocale(cN$1);
     const getSlots = (name) => slots[name];
     return {
@@ -43,7 +43,7 @@ const _hoisted_4$3 = {
   key: 3,
   class: "nut-sku-header-right-extra"
 };
-function _sfc_render$4 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_price = resolveComponent("nut-price");
   return openBlock(), createElementBlock("view", _hoisted_1$4, [
     createElementVNode("img", {
@@ -75,7 +75,7 @@ const _sfc_main$3 = create$3({
     }
   },
   emits: ["selectSku"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const skuInfo = ref([]);
     watch(
       () => props.sku,
@@ -110,7 +110,7 @@ const _hoisted_1$3 = { class: "nut-sku-select" };
 const _hoisted_2$2 = { class: "nut-sku-select-item-title" };
 const _hoisted_3$2 = { class: "nut-sku-select-item-skus" };
 const _hoisted_4$2 = ["onClick"];
-function _sfc_render$3 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("view", _hoisted_1$3, [
     (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.skuInfo, (item, index) => {
       return openBlock(), createElementBlock("view", {
@@ -160,7 +160,7 @@ const _sfc_main$2 = create$2({
   components: {
     NutInputNumber: _sfc_main$6
   },
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const goodsCount = ref(props.stepperMin);
     onMounted(() => {
       goodsCount.value = props.stepperMin;
@@ -204,7 +204,7 @@ const _hoisted_1$2 = { class: "nut-sku-stepper" };
 const _hoisted_2$1 = { class: "nut-sku-stepper-title" };
 const _hoisted_3$1 = ["innerHTML"];
 const _hoisted_4$1 = { class: "nut-sku-stepper-count" };
-function _sfc_render$2 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_input_number = resolveComponent("nut-input-number");
   return openBlock(), createElementBlock("view", _hoisted_1$2, [
     createElementVNode("view", _hoisted_2$1, toDisplayString(_ctx.stepperTitle), 1),
@@ -257,7 +257,7 @@ const _sfc_main$1 = create$1({
     }
   },
   emits: ["click", "changeSku", "changeBuyCount", "clickBtnOperate"],
-  setup (props, { emit, slots }) {
+  setup(props, { emit, slots }) {
     const getBtnDesc = (type) => {
       let mapD = {
         confirm: props.confirmText,
@@ -290,7 +290,7 @@ const _hoisted_3 = {
   class: "nut-sku-operate-btn"
 };
 const _hoisted_4 = ["onClick"];
-function _sfc_render$1 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   return _ctx.btnOptions.length > 0 ? (openBlock(), createElementBlock("view", _hoisted_1$1, [
     _ctx.btnExtraText ? (openBlock(), createElementBlock("view", _hoisted_2, toDisplayString(_ctx.btnExtraText), 1)) : createCommentVNode("", true),
     _cache[0] || (_cache[0] = createTextVNode()),
@@ -393,7 +393,7 @@ const _sfc_main = create({
     NutPopup,
     NutScrollView: _sfc_main$7
   },
-  setup (props, { emit, slots }) {
+  setup(props, { emit, slots }) {
     const translate = useLocale(cN);
     const showPopup = ref(props.visible);
     const goodsCount = ref(props.stepperMin);
@@ -464,7 +464,7 @@ const _sfc_main = create({
   }
 });
 const _hoisted_1 = { class: "nut-sku" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_sku_header = resolveComponent("sku-header");
   const _component_SkuSelect = resolveComponent("SkuSelect");
   const _component_sku_stepper = resolveComponent("sku-stepper");

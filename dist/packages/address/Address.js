@@ -23,7 +23,7 @@ import { N as NutPopup, p as popupProps } from "../index.taro-6458bbea.js";
 import { c as createComponent } from "../component-669c158a.js";
 import NutElevator from "../elevator/Elevator.js";
 import { _ as _sfc_main$1 } from "../index.taro.vue_vue_type_script_setup_true_lang-1aa3f6fa.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../overlay/Overlay.js";
 import "../with-install-783bc31f.js";
@@ -108,7 +108,7 @@ const _sfc_main = create({
     }
   }),
   emits: ["update:visible", "update:modelValue", "type", "change", "selected", "close", "closeMask", "switchModule"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const tabItemRef = reactive({
       province: ref(null),
@@ -380,7 +380,7 @@ const _hoisted_18 = { class: "nut-address__exist-item-info-name" };
 const _hoisted_19 = { class: "nut-address__exist-item-info-phone" };
 const _hoisted_20 = { class: "nut-address__exist-item-info-bottom" };
 const _hoisted_21 = { class: "nut-address__exist-choose-btn" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Left = resolveComponent("Left");
   const _component_Close = resolveComponent("Close");
   const _component_Check = resolveComponent("Check");

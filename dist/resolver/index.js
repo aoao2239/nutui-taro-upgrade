@@ -1,6 +1,6 @@
 "use strict";
 const nutFunctions = ["showToast", "showNotify", "showDialog", "showImagePreview"];
-function getNutResolved (name, options) {
+function getNutResolved(name, options) {
   const { taro = false, autoImport = false } = options;
   const packageName = taro ? "nutui-taro-upgrade" : "@nutui/nutui";
   const componentName = autoImport ? name.slice(4) : name;
@@ -11,7 +11,7 @@ function getNutResolved (name, options) {
     sideEffects: style
   };
 }
-function NutUIResolver (options = {}) {
+function NutUIResolver(options = {}) {
   return {
     type: "component",
     resolve: (name) => {

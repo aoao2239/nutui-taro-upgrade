@@ -2,7 +2,7 @@ import { ref, computed, watch, onMounted, resolveComponent, openBlock, createEle
 import { c as createComponent } from "../component-669c158a.js";
 import { N as NutPopup } from "../index.taro-6458bbea.js";
 import { Tips } from "@nutui/icons-vue-taro";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { eventCenter, getCurrentInstance } from "@tarojs/taro";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../overlay/Overlay.js";
@@ -56,12 +56,12 @@ const _sfc_main = create({
     }
   },
   emits: ["update:modelValue", "update:visible", "complete", "tips", "close", "focus"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const realInput = ref(props.modelValue);
     const comLen = computed(() => range(Number(props.length)));
     const show = ref(props.visible);
-    function focus (event) {
+    function focus(event) {
       event.stopPropagation();
       emit("focus");
     }
@@ -80,14 +80,14 @@ const _sfc_main = create({
         }
       }
     );
-    function close () {
+    function close() {
       emit("update:visible", false);
       emit("close");
     }
-    function range (val) {
+    function range(val) {
       return Math.min(Math.max(4, val), 6);
     }
-    function onTips () {
+    function onTips() {
       emit("tips");
     }
     onMounted(() => {
@@ -116,7 +116,7 @@ const _hoisted_5 = {
 };
 const _hoisted_6 = { class: "nut-short-password__message" };
 const _hoisted_7 = { class: "nut-short-password--error" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_tips = resolveComponent("tips");
   const _component_nut_popup = resolveComponent("nut-popup");
   return openBlock(), createElementBlock("view", _hoisted_1, [

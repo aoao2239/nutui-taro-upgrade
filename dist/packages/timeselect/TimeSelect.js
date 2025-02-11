@@ -1,7 +1,7 @@
 import { computed, provide, resolveComponent, openBlock, createBlock, normalizeStyle, withCtx, createElementVNode, createElementBlock, toDisplayString, renderSlot, createTextVNode } from "vue";
 import { c as createComponent } from "../component-669c158a.js";
 import { N as NutPopup } from "../index.taro-6458bbea.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "@nutui/icons-vue-taro";
 import "../overlay/Overlay.js";
@@ -73,7 +73,7 @@ const _hoisted_4 = { key: 0 };
 const _hoisted_5 = { class: "nut-time-select__content" };
 const _hoisted_6 = { class: "nut-time-select__content__pannel" };
 const _hoisted_7 = { class: "nut-time-select__content__detail" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_popup = resolveComponent("nut-popup");
   return openBlock(), createBlock(_component_nut_popup, {
     position: "bottom",

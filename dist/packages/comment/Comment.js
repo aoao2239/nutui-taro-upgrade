@@ -3,7 +3,7 @@ import { Right, Fabulous, Comment, MoreX } from "@nutui/icons-vue-taro";
 import { c as createComponent } from "../component-669c158a.js";
 import { Rate as _sfc_main$4 } from "../rate/Rate.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import "../renderIcon-3d0fd47c.js";
 import "../pxCheck-a27490eb.js";
 import "../common-47b33c3f.js";
@@ -28,7 +28,7 @@ const _sfc_main$3 = create$3({
     }
   },
   emits: ["handleClick"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const handleClick = () => {
       emit("handleClick");
     };
@@ -43,7 +43,7 @@ const _hoisted_5$1 = {
   key: 0,
   class: "nut-comment-header__time"
 };
-function _sfc_render$3 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_rate = resolveComponent("nut-rate");
   return openBlock(), createElementBlock("view", null, [
     _ctx.info ? (openBlock(), createElementBlock("view", {
@@ -138,7 +138,7 @@ const _sfc_main$2 = create$2({
   },
   components: { Right },
   emits: ["click", "clickImages"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const isShowImage = ref(false);
     const initIndex = ref(1);
     const totalImages = ref([]);
@@ -182,7 +182,7 @@ const _hoisted_5 = {
   key: 0,
   class: "nut-comment-images__mask"
 };
-function _sfc_render$2 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Right = resolveComponent("Right");
   return openBlock(), createElementBlock("view", {
     class: normalizeClass(`nut-comment-images nut-comment-images--${_ctx.type}`)
@@ -243,7 +243,7 @@ const _sfc_main$1 = create$1({
   },
   components: { Fabulous, Comment, MoreX },
   emits: ["clickOperate", "handleClick"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN$1);
     const showPopver = ref(false);
     const mergeOp = ref([]);
@@ -276,7 +276,7 @@ const _hoisted_2$1 = {
 };
 const _hoisted_3$1 = { class: "nut-comment-bottom__cpx" };
 const _hoisted_4$1 = ["onClick"];
-function _sfc_render$1 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_Fabulous = resolveComponent("Fabulous");
   const _component_Comment = resolveComponent("Comment");
   const _component_MoreX = resolveComponent("MoreX");
@@ -366,7 +366,7 @@ const _sfc_main = create({
     Right
   },
   emits: ["click", "clickImages", "clickOperate"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const conEllipsis = computed(() => {
       if (props.ellipsis)
@@ -392,7 +392,7 @@ const _hoisted_1 = {
 const _hoisted_2 = ["innerHTML"];
 const _hoisted_3 = { class: "nut-comment__follow-title" };
 const _hoisted_4 = { class: "nut-comment__follow-com" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_comment_header = resolveComponent("comment-header");
   const _component_comment_images = resolveComponent("comment-images");
   const _component_Right = resolveComponent("Right");

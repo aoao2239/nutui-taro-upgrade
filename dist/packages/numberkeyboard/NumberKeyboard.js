@@ -1,7 +1,7 @@
 import { ref, computed, watch, resolveComponent, openBlock, createBlock, withCtx, createElementVNode, createElementBlock, toDisplayString, createTextVNode, createCommentVNode, Fragment, renderList, normalizeClass } from "vue";
 import { c as createComponent } from "../component-669c158a.js";
 import { N as NutPopup } from "../index.taro-6458bbea.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "@nutui/icons-vue-taro";
 import "../overlay/Overlay.js";
@@ -61,12 +61,12 @@ const _sfc_main = create({
     }
   },
   emits: ["input", "delete", "close", "confirm", "update:modelValue", "update:visible"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const clickKeyIndex = ref(void 0);
     const show = ref(props.visible);
     const root = ref();
-    function defaultKey () {
+    function defaultKey() {
       const { customKey } = props;
       let object = {
         id: "lock",
@@ -81,7 +81,7 @@ const _sfc_main = create({
       }
       return [...getBasicKeys(), object, { id: 0, type: "number" }, { id: "delete", type: "delete" }];
     }
-    function getBasicKeys () {
+    function getBasicKeys() {
       const keys = [];
       for (let i = 1; i <= 9; i++) {
         keys.push({ id: i, type: "number" });
@@ -91,7 +91,7 @@ const _sfc_main = create({
       }
       return keys;
     }
-    function genCustomKeys () {
+    function genCustomKeys() {
       const keys = getBasicKeys();
       const { customKey } = props;
       let customKeys = Array.isArray(customKey) ? customKey : [customKey];
@@ -128,7 +128,7 @@ const _sfc_main = create({
         show.value = value;
       }
     );
-    function onTouchstart (item, event) {
+    function onTouchstart(item, event) {
       event.stopPropagation();
       clickKeyIndex.value = item.id;
       if (item.type == "number" || item.type == "custom") {
@@ -145,13 +145,13 @@ const _sfc_main = create({
         emit("update:modelValue", props.modelValue.slice(0, props.modelValue.length - 1));
       }
     }
-    function onTouchMove (event) {
+    function onTouchMove(event) {
       event.stopPropagation();
     }
-    function onTouchEnd () {
+    function onTouchEnd() {
       clickKeyIndex.value = void 0;
     }
-    function closeBoard () {
+    function closeBoard() {
       emit("update:visible", false);
       emit("close");
     }
@@ -200,7 +200,7 @@ const _hoisted_9 = {
   class: "nut-number-keyboard__sidebar"
 };
 const _hoisted_10 = { class: "nut-key__wrapper" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_popup = resolveComponent("nut-popup");
   return openBlock(), createBlock(_component_nut_popup, {
     visible: _ctx.show,

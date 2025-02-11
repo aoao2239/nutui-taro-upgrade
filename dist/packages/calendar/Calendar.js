@@ -23,7 +23,7 @@ import Taro from "@tarojs/taro";
 import { _ as _sfc_main$2 } from "../index.taro.vue_vue_type_script_setup_true_lang-1aa3f6fa.js";
 import { U as Utils } from "../date-93eaa982.js";
 import { r as requestAniFrame } from "../raf-df951186.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import { N as NutPopup } from "../index.taro-6458bbea.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
@@ -102,7 +102,7 @@ const _sfc_main$1 = create$1({
     disabledDate: Function
   },
   emits: ["choose", "update", "close", "select"],
-  setup (props, { emit, slots, expose }) {
+  setup(props, { emit, slots, expose }) {
     const translate = useLocale(cN);
     const weekdays = translate("weekdays").map((day, index) => ({
       day,
@@ -635,7 +635,7 @@ const _sfc_main$1 = create$1({
     };
     onMounted(() => {
       Taro.getSystemInfo({
-        success (res) {
+        success(res) {
           let scale = 2;
           let toFixed = 3;
           if (TARO_ENV === Taro.ENV_TYPE.WEB) {
@@ -720,7 +720,7 @@ const _hoisted_14 = {
   key: 0,
   class: "nut-calendar__footer"
 };
-function _sfc_render$1 (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_scroll_view = resolveComponent("nut-scroll-view");
   return openBlock(), createElementBlock("view", {
     class: normalizeClass(["nut-calendar", {
@@ -910,12 +910,12 @@ const _sfc_main = create({
     disabledDate: Function
   },
   emits: ["choose", "close", "update:visible", "select"],
-  setup (props, { emit, slots, expose }) {
+  setup(props, { emit, slots, expose }) {
     const visible = computed({
-      get () {
+      get() {
         return props.visible;
       },
-      set (val) {
+      set(val) {
         emit("update:visible", val);
       }
     });
@@ -993,7 +993,7 @@ const _sfc_main = create({
     };
   }
 });
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_calendar_item = resolveComponent("nut-calendar-item");
   const _component_nut_popup = resolveComponent("nut-popup");
   return _ctx.poppable ? (openBlock(), createBlock(_component_nut_popup, mergeProps({

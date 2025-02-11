@@ -1,6 +1,6 @@
 {
   "name": "nutui-taro-upgrade",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "@nutui/nutui-taro 对京东风格组件库的taro4 版本支持",
   "main": "dist/nutui.umd.js",
   "module": "dist/nutui.es.js",

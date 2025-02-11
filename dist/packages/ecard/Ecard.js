@@ -1,7 +1,7 @@
 import { ref, watch, resolveComponent, openBlock, createElementBlock, createElementVNode, toDisplayString, createTextVNode, Fragment, renderList, normalizeClass, withDirectives, vModelText, createVNode } from "vue";
 import { c as createComponent } from "../component-669c158a.js";
 import { InputNumber as _sfc_main$1 } from "../inputnumber/InputNumber.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../pxCheck-a27490eb.js";
 import "@nutui/icons-vue-taro";
@@ -59,7 +59,7 @@ const _sfc_main = create({
     }
   },
   emits: ["inputChange", "changeStep", "inputClick", "change", "update:modelValue"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const currentIndex = ref(null);
     const currentValue = ref(null);
@@ -124,7 +124,7 @@ const _hoisted_4 = ["onClick"];
 const _hoisted_5 = { class: "nut-ecard__list__input--con" };
 const _hoisted_6 = ["placeholder"];
 const _hoisted_7 = { class: "nut-ecard__list__step" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_input_number = resolveComponent("nut-input-number");
   return openBlock(), createElementBlock("view", _hoisted_1, [
     createElementVNode("view", _hoisted_2, toDisplayString(_ctx.chooseText || _ctx.translate("chooseText")), 1),

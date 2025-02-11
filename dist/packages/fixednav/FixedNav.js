@@ -2,7 +2,7 @@ import { computed, ref, resolveComponent, openBlock, createElementBlock, normali
 import { Left } from "@nutui/icons-vue-taro";
 import { Overlay as _sfc_main$1 } from "../overlay/Overlay.js";
 import { c as createComponent } from "../component-669c158a.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../with-install-783bc31f.js";
 import "nutui-taro-upgrade/dist/packages/locale/lang";
@@ -54,7 +54,7 @@ const _sfc_main = create({
     }
   },
   emits: ["update:visible", "selected"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const classes = computed(() => {
       const prefixCls = "nut-fixed-nav";
@@ -87,7 +87,7 @@ const _hoisted_5 = {
   class: "b"
 };
 const _hoisted_6 = { class: "text" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_overlay = resolveComponent("nut-overlay");
   const _component_Left = resolveComponent("Left");
   return openBlock(), createElementBlock("view", {

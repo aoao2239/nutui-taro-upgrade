@@ -22,7 +22,7 @@ import { c as createComponent } from "../component-669c158a.js";
 import { d as isPromise } from "../util-f26975e1.js";
 import { N as NutPopup, p as popupProps } from "../index.taro-6458bbea.js";
 import { Button as _sfc_main$1 } from "../button/Button.js";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "@nutui/icons-vue-taro";
 import "../overlay/Overlay.js";
@@ -103,12 +103,12 @@ const _sfc_main = create({
     }
   }),
   emits: ["update", "update:visible", "ok", "cancel", "opened", "closed"],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const translate = useLocale(cN);
     const showPopup = ref(props.visible);
     onMounted(() => {
       if (props.closeOnPopstate) {
-        window.addEventListener("popstate", function () {
+        window.addEventListener("popstate", function() {
           closed("page");
         });
       }
@@ -180,7 +180,7 @@ const _hoisted_1 = {
   class: "nut-dialog__header"
 };
 const _hoisted_2 = ["innerHTML"];
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_button = resolveComponent("nut-button");
   const _component_nut_popup = resolveComponent("nut-popup");
   return openBlock(), createBlock(_component_nut_popup, {

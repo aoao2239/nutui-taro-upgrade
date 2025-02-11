@@ -25,7 +25,7 @@ import { Progress as _sfc_main$1 } from "../progress/Progress.js";
 import { Button as _sfc_main$2 } from "../button/Button.js";
 import Taro from "@tarojs/taro";
 import { Photograph, Failure, Loading, Del, Link } from "@nutui/icons-vue-taro";
-import { u as useLocale } from "../index-a91e4a00.js";
+import { u as useLocale } from "../index-3b6ff56c.js";
 import { u as useFormDisabled } from "../common-47b33c3f.js";
 import { _ as _export_sfc } from "../_plugin-vue_export-helper-cc2b3d55.js";
 import "../util-f26975e1.js";
@@ -57,7 +57,7 @@ class Uploader {
     __publicField(this, "options");
     this.options = options;
   }
-  upload () {
+  upload() {
     var _a;
     const options = this.options;
     const xhr = new XMLHttpRequest();
@@ -101,7 +101,7 @@ class UploaderTaro extends Uploader {
   constructor(options) {
     super(options);
   }
-  uploadTaro (uploadFile, env) {
+  uploadTaro(uploadFile, env) {
     var _a;
     const options = this.options;
     if (env === "WEB") {
@@ -120,7 +120,7 @@ class UploaderTaro extends Uploader {
           //
           formData: options.formData,
           name: options.name,
-          success (response) {
+          success(response) {
             var _a2, _b;
             if (options.xhrState == response.statusCode) {
               (_a2 = options.onSuccess) == null ? void 0 : _a2.call(options, response, options);
@@ -128,7 +128,7 @@ class UploaderTaro extends Uploader {
               (_b = options.onFailure) == null ? void 0 : _b.call(options, response, options);
             }
           },
-          fail (e) {
+          fail(e) {
             var _a2;
             (_a2 = options.onFailure) == null ? void 0 : _a2.call(options, e, options);
           }
@@ -237,7 +237,7 @@ const _sfc_main = create({
     "update:fileList",
     "fileItemClick"
   ],
-  setup (props, { emit }) {
+  setup(props, { emit }) {
     const disabled = useFormDisabled(toRef(props, "disabled"));
     const translate = useLocale(cN);
     const fileList = ref(props.fileList);
@@ -529,7 +529,7 @@ const _hoisted_12 = {
 };
 const _hoisted_13 = ["onClick"];
 const _hoisted_14 = { class: "file__name_tips" };
-function _sfc_render (_ctx, _cache, $props, $setup, $data, $options) {
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_nut_button = resolveComponent("nut-button");
   const _component_Failure = resolveComponent("Failure");
   const _component_Loading = resolveComponent("Loading");
